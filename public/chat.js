@@ -15,7 +15,7 @@ let chatHistory = [
 	{
 		role: "assistant",
 		content:
-			"Hola, soy el asistente eléctrico alambrito. Responde solo preguntas sobre instalaciones eléctricas residenciales chilenas.",
+			"Hola, soy Alan~Brito. Responde solo preguntas sobre instalaciones eléctricas residenciales chilenas que deben complir con los pliegos normativos SEC.",
 	},
 ];
 let isProcessing = false;
@@ -74,8 +74,10 @@ async function sendMessage() {
 		// Scroll to bottom
 		chatMessages.scrollTop = chatMessages.scrollHeight;
 
+  
 		// Send request to API
-		const response = await fetch("/api/chat", {
+                // antes era api/chat, pero ahora es api/alambrito
+		const response = await fetch("/api/alambrito", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -87,7 +89,7 @@ async function sendMessage() {
 
 		// Handle errors
 		if (!response.ok) {
-			throw new Error("Failed to get response");
+			throw new Error("No se pudo obtener la respuesta");
 		}
 
 		// Process streaming response
@@ -119,7 +121,7 @@ async function sendMessage() {
 						chatMessages.scrollTop = chatMessages.scrollHeight;
 					}
 				} catch (e) {
-					console.error("Error parsing JSON:", e);
+					console.error("Error leyendo el formato JSON:", e);
 				}
 			}
 		}
@@ -130,7 +132,7 @@ async function sendMessage() {
 		console.error("Error:", error);
 		addMessageToChat(
 			"assistant",
-			"Sorry, there was an error processing your request.",
+			"Lo sentimos, ocurrió un error al procesar su solicitud.",
 		);
 	} finally {
 		// Hide typing indicator
