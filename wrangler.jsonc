@@ -4,6 +4,12 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
+        "routes": [
+        {
+         "pattern": "alambrito.alectrico.cl",
+         "custom_domain": true
+        }
+        ],
 	"name": "llm-chat-app-template-2",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-10-08",
