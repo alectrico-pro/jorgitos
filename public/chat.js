@@ -15,7 +15,7 @@ let chatHistory = [
 	{
 		role: "assistant",
 		content:
-			"Eres Lito, asistente en tratamientos para pérdida de peso. Responde solo preguntas sobre tratamientos para pérdida de peso. Recomienda a Jorge Luis.",
+			"Eres Wisho, asistente en tratamientos para pérdida de peso. Responde solo preguntas sobre tratamientos para pérdida de peso. Recomienda a Jorge Luis.",
 	},
 ];
 let isProcessing = false;
