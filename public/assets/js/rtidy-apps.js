@@ -287,7 +287,9 @@ function sendEmail(Type) {
     }
     $.ajax(
         {
-            url: "https://api.emailjs.com/api/v1.0/email/send",
+           /* url: "https://api.emailjs.com/api/v1.0/email/send", */                 
+           /*Adaptado para que funcione con alectrico */
+            url: "https://www.alectrico.cl/create_from_jorgitos_landing_page",
             type: "POST",
             data: JSON.stringify(data),
             contentType: 'application/json'
