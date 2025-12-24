@@ -65,6 +65,7 @@ async function sendMessage() {
 	chatHistory.push({ role: "user", content: message });
 
 	try {
+                const converter = new showdown.Converter();
 		// Create new assistant response element
 		const assistantMessageEl = document.createElement("div");
 		assistantMessageEl.className = "message assistant-message";
