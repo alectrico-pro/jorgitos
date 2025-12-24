@@ -115,10 +115,10 @@ async function sendMessage() {
 					if (jsonData.response) {
 						// Append new content to existing text
 						responseText += jsonData.response;
-						assistantMessageEl.querySelector("p").textContent = responseText;
+						//assistantMessageEl.querySelector("p").textContent = responseText;
 
 						// Scroll to bottom
-						chatMessages.scrollTop = chatMessages.scrollHeight;
+						//chatMessages.scrollTop = chatMessages.scrollHeight;
 					}
 				} catch (e) {
 					console.error("Error leyendo el formato JSON:", e);
@@ -128,6 +128,9 @@ async function sendMessage() {
 
 		// Add completed response to chat history
 		chatHistory.push({ role: "assistant", content: responseText });
+                assistantMessageEl.innerHTML = converter.makeHtml( responseText);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+
 	} catch (error) {
 		console.error("Error:", error);
 		addMessageToChat(
