@@ -1,3 +1,23 @@
+#Sitio de MUNDO LATINO
+-Tien un botón AI para LLM Chat
+
+Existe un backup zip en WebSite
+unzipear y colocar en src/public
+Para acceder a LLM poner un link para ai.html
+Index.html es ahora el código html hecho por otros
+Tiene algunos formularios que apuntan a www.alectrico.cl
+#Allá es atendido por el worker cotorro
+#En url como create_from_jorgitos_landing_page
+#Eso genera avisos en los colaboradores que están
+#En la lista nomina en worker finanza
+#Los colaboradores deben comprar tokens
+#Como es mi hermano esos tokens deberé ver como
+#Se los otorgo sin que haya que comprarlos
+#Al parecer hay un solo número con whatsapp que es el de mi hermano
+#Así que inactivaré los colaboradores de alectrico
+#Momentaneamente y pondré el ńumero de mi hermano
+#A ver que pasa
+
 # LLM Chat Application Template
 
 A simple, ready-to-deploy chat application template powered by Cloudflare Workers AI. This template provides a clean starting point for building AI chat applications with streaming responses.
