@@ -259,9 +259,9 @@ function validateForm(){
     }
 
 
-
+    // (dateInputReady === true)
     
-    if((nameInputReady === true) && (phoneInputReady === true) && (dateInputReady === true) && (emailInputReady === true) && (messageInputReady === true)){
+    if((nameInputReady === true) && (phoneInputReady === true) && (emailInputReady === true) && (messageInputReady === true)){
         console.log("Pasó la validacioń");
         sendEmailButton.removeAttr("disabled");
         sendEmailButton.css('background-color', '#1acc8d');
