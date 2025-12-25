@@ -236,32 +236,8 @@ function validateInput(inputField, appointment){
 }
 function validateForm(){
     console.log("En validateForm");
-    if (nameInputReady === true) {
-      console.log("name ready")
-    }
 
-    if (phoneInputReady === true) {
-      console.log("phone ready")
-    }
-
-
-    if (dateInputReady === true) {
-      console.log("date ready")
-    }
-
-
-    if (emailInputReady === true) {
-      console.log("email ready")
-    }
-
-    if (messageInputReady === true) {
-      console.log("message ready")
-    }
-
-
-    // (dateInputReady === true)
-    
-    if((nameInputReady === true) && (phoneInputReady === true) && (emailInputReady === true) && (messageInputReady === true)){
+    if((nameInputReady === true) && (phoneInputReady === true) && (dateInputReady === true) && (emailInputReady === true) && (messageInputReady === true)){
         console.log("Pasó la validacioń");
         sendEmailButton.removeAttr("disabled");
         sendEmailButton.css('background-color', '#1acc8d');
@@ -274,9 +250,9 @@ function validateForm(){
 }
 function sendEmail(Type) {
     console.log("En sendEmail")
-    /* if((nameInputReady === false) || (phoneInputReady === false) || (dateInputReady === false) || (emailInputReady === false) || (messageInputReady === false)){
+    if((nameInputReady === false) || (phoneInputReady === false) || (dateInputReady === false) || (emailInputReady === false) || (messageInputReady === false)){
         return false;
-    }*/
+    }
     sendEmailButton.attr("disabled", true);
     if ( Type === "Appointment") {
         console.log("En Appointment");
