@@ -262,12 +262,12 @@ function validateForm(){
 
     
     if((nameInputReady === true) && (phoneInputReady === true) && (dateInputReady === true) && (emailInputReady === true) && (messageInputReady === true)){
-        console.log("No pasó la validacioń");
+        console.log("Pasó la validacioń");
         sendEmailButton.removeAttr("disabled");
         sendEmailButton.css('background-color', '#1acc8d');
     }
     else{
-        console.log("Pasó la validación");
+        console.log("No Pasó la validación");
         sendEmailButton.attr("disabled", true);
         sendEmailButton.css('background-color', 'gray');
     }
@@ -356,8 +356,10 @@ function sendEmail(Type) {
         contactFormInputName.attr("disabled", true);
         contactFormInputEmail.val("");
         contactFormInputEmail.attr("disabled", true);
-        contactFormInputSubject.val("");
-        contactFormInputSubject.attr("disabled", true);
+
+        //contactFormInputSubject.val("");
+        // contactFormInputSubject.attr("disabled", true);
+
         contactFormInputText.val("");
         contactFormInputText.attr("disabled", true);
         sendEmailButton.css('background-color', 'gray');
