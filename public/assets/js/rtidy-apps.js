@@ -236,12 +236,38 @@ function validateInput(inputField, appointment){
 }
 function validateForm(){
     console.log("En validateForm");
+    if (nameInputReady === true) {
+      console.log("name ready")
+    }
+
+    if (phoneInputReady === true) {
+      console.log("phone ready")
+    }
+
+
+    if (dateInputReady === true) {
+      console.log("date ready")
+    }
+
+
+    if (emailInputReady === true) {
+      console.log("email ready")
+    }
+
+    if (messageInputReady === true) {
+      console.log("message ready")
+    }
+
+
+
+    
     if((nameInputReady === true) && (phoneInputReady === true) && (dateInputReady === true) && (emailInputReady === true) && (messageInputReady === true)){
-        console.log("No pasó la validacioń")
+        console.log("No pasó la validacioń");
         sendEmailButton.removeAttr("disabled");
         sendEmailButton.css('background-color', '#1acc8d');
     }
     else{
+        console.log("Pasó la validación");
         sendEmailButton.attr("disabled", true);
         sendEmailButton.css('background-color', 'gray');
     }
