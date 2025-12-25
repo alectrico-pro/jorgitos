@@ -245,11 +245,13 @@ function validateForm(){
     }
 }
 function sendEmail(Type) {
-    if((nameInputReady === false) || (phoneInputReady === false) || (dateInputReady === false) || (emailInputReady === false) || (messageInputReady === false)){
+    console.log("En sendEmail")
+    /* if((nameInputReady === false) || (phoneInputReady === false) || (dateInputReady === false) || (emailInputReady === false) || (messageInputReady === false)){
         return false;
-    }
+    }*/
     sendEmailButton.attr("disabled", true);
     if ( Type === "Appointment") {
+        console.log("En Appointment");
         sendEmailButton.text("Creating appointment...");
         const dateStr = contactFormInputDate.val();
         const [year, month, day] = dateStr.split('-');
