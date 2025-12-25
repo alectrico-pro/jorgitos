@@ -235,7 +235,9 @@ function validateInput(inputField, appointment){
     }
 }
 function validateForm(){
+    console.log("En validateForm");
     if((nameInputReady === true) && (phoneInputReady === true) && (dateInputReady === true) && (emailInputReady === true) && (messageInputReady === true)){
+        console.log("No pasó la validacioń")
         sendEmailButton.removeAttr("disabled");
         sendEmailButton.css('background-color', '#1acc8d');
     }
