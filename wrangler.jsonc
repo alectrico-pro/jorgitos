@@ -10,7 +10,7 @@
          "custom_domain": true
         }
         ],
-	"name": "llm-chat-app-template-2",
+	"name": "jorgitos",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-10-08",
 	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
